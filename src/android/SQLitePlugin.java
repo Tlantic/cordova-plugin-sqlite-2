@@ -190,7 +190,6 @@ public class SQLitePlugin extends CordovaPlugin {
         File file = new File(cordova.getActivity().getFilesDir(), name);
         database = SQLiteDatabase.openOrCreateDatabase(file, null);
       }
-      DATABASES.put(name, database);
     }
     return database;
   }
